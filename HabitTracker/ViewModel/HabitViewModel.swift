@@ -50,7 +50,7 @@ class HabitViewModel: ObservableObject {
             // Removing All Pending Notifications
             UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: editHabit.notificationIDs ?? [])
         } else {
-            let habit = Habit(context: context)
+            habit = Habit(context: context)
         }
         habit.title = title
         habit.color = habitColor
